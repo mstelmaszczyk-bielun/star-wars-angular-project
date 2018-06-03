@@ -1,0 +1,22 @@
+<div *ngIf="data === null">Ładowanie listy bohaterów sagi... </div>
+
+<div *ngIf="data !== null">
+    <ul class="character-list">
+        <li *ngFor="let character of data.results; let i = index">
+            <character
+                (click)="selectCharacter(i)"
+                [folded]="selectedCharacter !== i"
+                [character]="character">
+            </character>
+        </li>
+    </ul>
+    <nav>
+        <button *ngIf="data.prev !== null" routerLink="/{{page-1}}/person" class="prev">
+            <span>Prev page</span>
+        </button>
+        <button *ngIf="data.next !== null" routerLink="/{{page+1}}/person" class="next">
+            <span>Next page</span>
+        </button>
+      </nav>
+    <nav-page [count]="data.count" [activePage]="page"></nav-page>
+</div>

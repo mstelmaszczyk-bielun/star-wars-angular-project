@@ -1,0 +1,22 @@
+
+    <h2>{{character.name}}</h2>
+    <section *ngIf="!folded" class="character-props">
+        <div>
+            <label>Gender</label>: {{character.gender}}
+        </div>
+        <div>
+            <label>Height</label>: {{character.height}}
+        </div>
+        <div>
+            <label>Birth year</label>: {{character.birth_year}}
+        </div>
+        <div>
+            <label>Weight</label>: {{character.mass}}
+        </div>
+        <div>
+            <label>Skin color</label>: {{character.skin_color}}
+        </div>
+        <div>
+            <label>Eye color</label>: {{character.eye_color}}
+        </div> 
+    </section>

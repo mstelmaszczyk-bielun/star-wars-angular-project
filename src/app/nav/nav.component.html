@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let i of pages"
+        routerLink="/{{i}}/person"
+        [class.active]="activePage === i">
+    {{i}}
+</li>
+</ul>

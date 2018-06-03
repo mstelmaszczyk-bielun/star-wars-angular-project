@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    background: url(./images/universe-background.jpg) #ccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.wrapper {
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color:#ccc;
+    opacity: .9;
+}
+
+header{
+    text-align: center;
+    background-color: steelblue;
+    box-sizing: border-box;
+    opacity: .75;
+    padding:0;
+    margin: 0px;
+    overflow: hidden;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+footer{
+    font-size: 16px;
+    text-align: center;
+    background-color: steelblue;
+    padding-top: 12px;
+    height: 48px;
+    opacity: .75;
+}
